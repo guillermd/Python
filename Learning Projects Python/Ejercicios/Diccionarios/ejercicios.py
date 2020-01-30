@@ -24,17 +24,27 @@ class Ejercicio2():
     
 
 
-    
+    #Ejercicio 3
 
-#Ejercicio 3
-#Escribir un programa que guarde en un diccionario los precios de las frutas de la tabla, pregunte al usuario por una fruta, un número de kilos y muestre por pantalla el precio de ese número de kilos de fruta. Si la fruta no está en el diccionario debe mostrar un mensaje informando de ello.
+#Escribir un programa que guarde en un diccionario los precios de las frutas de la tabla, pregunte al usuario por una fruta, 
+# un número de kilos y muestre por pantalla el precio de ese número de kilos de fruta. Si la fruta no está en el diccionario 
+# debe mostrar un mensaje informando de ello.
 
 #Fruta	Precio
 #Plátano	1.35
 #Manzana	0.80
 #Pera	0.85
 #Naranja	0.70
+class Ejercicio3():
+    diccionario={"Platano":"1,35", "Manzana":"0,80", "Pera":"0.85", "Naranja":"0,70" }
 
+    def CalcularPrecio(self):
+        fruta=input(print("dime que fruta quieres:"))
+        if (self.diccionario.get(fruta)==None):
+            print("esa fruta no existe en la fruteria")
+        else:
+            kilos=input(print("Cuantos kilos quieres: "))
+        print("El precio de ", int(kilos),"kilos de ", fruta, "es de ", float(self.diccionario[fruta])* int(kilos))
 #Ejercicio 4
 #Escribir un programa que pregunte una fecha en formato dd/mm/aaaa y muestre por pantalla la misma fecha en formato dd de <mes> de aaaa donde <mes> es el nombre del mes.
 
@@ -75,5 +85,5 @@ class Ejercicio2():
 #Mostrar la lista de clientes preferentes de la base de datos con su NIF y nombre.
 #Terminar el programa.
 
-Ej = Ejercicio2()
-Ej.LanzarEjercicio()
+Ej = Ejercicio3()
+Ej.CalcularPrecio()
