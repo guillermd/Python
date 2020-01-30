@@ -3,13 +3,28 @@
 class Ejercicio1():
     diccionario= {'Euro':'€', 'Dollar':'$', 'Yen':'¥'}
 
-    def devuelveMoneda(divisa):
+    def devuelveMoneda(self):
+        divisa=input(print("Dame la divisa: "))
+        print("El simbolo de la divisa es:", self.diccionario.get(divisa))
+      
         
 
+
 #Ejercicio 2
-#Escribir un programa que pregunte al usuario su nombre, edad, dirección y teléfono y lo guarde en un diccionario. Después debe mostrar por pantalla el mensaje <nombre> tiene <edad> años, vive en <dirección> y su número de teléfono es <teléfono>.
+#Escribir un programa que pregunte al usuario su nombre, edad, dirección y teléfono y lo guarde en un diccionario. 
+# Después debe mostrar por pantalla el mensaje <nombre> tiene <edad> años, vive en <dirección> y su número de teléfono es <teléfono>.
 class Ejercicio2():
-    pass
+    nombre=input(print("Dime tu nombre: "))
+    direccion=input(print("Donde vives?: "))
+    edad=input(print("Cuantos años tienes? "))
+    telefono=input(print("tu numero de telefono es: "))
+    def LanzarEjercicio(self):
+        diccionario={'nombre':self.nombre, 'edad':self.edad, 'direccion':self.direccion, 'telefono': self.telefono}
+        print(diccionario["nombre"]," tiene ",diccionario["edad"]," años, vive en ",diccionario["direccion"]," y su número de teléfono es ",diccionario["telefono"],".")
+    
+
+
+    
 
 #Ejercicio 3
 #Escribir un programa que guarde en un diccionario los precios de las frutas de la tabla, pregunte al usuario por una fruta, un número de kilos y muestre por pantalla el precio de ese número de kilos de fruta. Si la fruta no está en el diccionario debe mostrar un mensaje informando de ello.
@@ -59,3 +74,6 @@ class Ejercicio2():
 #Mostrar lista de todos los clientes de la base datos con su NIF y nombre.
 #Mostrar la lista de clientes preferentes de la base de datos con su NIF y nombre.
 #Terminar el programa.
+
+Ej = Ejercicio2()
+Ej.LanzarEjercicio()
