@@ -22,7 +22,13 @@ class ejercicio3():
 #Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, 
 # los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
 class ejercicio4():
-    while(lista.)
+    lista=[]
+    while(lista.count()<8):
+        num=print("Introduce un numero:")
+        lista.append(int(num))
+    
+    print("los numeros introducidos son", lista.)
+
 
 #Ejercicio 5
 #Escribir un programa que almacene en una lista los números del 1 al 10 y 
