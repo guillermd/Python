@@ -32,10 +32,26 @@ class Ejercicio2():
 #***
 #****
 #*****
+class Ejercicio6:
 
+    def EjecutarEjercicio(self):
+        altura=input(print("dime q altura quieres:"))
+        cadena=""
+        for i in range(int(altura)):
+            cadena=""
+            for a in range(i):
+                cadena+="*"
+            print(cadena)
+            
+        
 
 #Ejercicio 7
 #Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10.
+class Ejercicio7():
+    def EjecutarEjercicio(self):
+        for i in range(1,11):
+            for a in range(1,11):
+                print(i, "*", a,"=", i*a)
 
 
 #Ejercicio 8
@@ -54,5 +70,5 @@ class Ejercicio2():
 #Ejercicio 10
 #Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un número primo o no.
 
-Ej=Ejercicio2()
+Ej=Ejercicio7()
 Ej.EjecutarEjercicio()
