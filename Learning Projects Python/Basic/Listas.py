@@ -24,6 +24,7 @@ print("ListaDeLetras.remove(item):Borra el elemento seleccionado "); ListaDeLetr
 print (ListaDeLetras)
 print("G" in ListaDeLetras) #Devolvera true si G existe en la lista
 ListaDeNUmeros=[1,2,3,4,5,6]
+print (ListaDeLetras.reverse())#Muestra la lista desde el ultimo al primero
 ListaTotal=ListaDeNUmeros+ListaDeLetras#El poerador + sirve para concatenar listas
 print(ListaTotal)
 ListaDeNUmeros2=[7,8,9]*2
