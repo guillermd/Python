@@ -49,7 +49,14 @@ class Ejercicio4():
 # El grupo A esta formado por las mujeres con un nombre anterior a la M y 
 # los hombres con un nombre posterior a la N y el grupo B por el resto. 
 # Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pantalla el grupo que le corresponde.
-
+class Ejercicio5():
+    def EjecutarEjercicio(self):
+        nombre=input(print("dime tu nombre:"))
+        sexo=input(print("dime tu sexo(M/F):"))
+        if((sexo=="M" and nombre[0:1].upper()>"N") or (sexo=="F" and nombre[0:1].upper()<"M") ):
+            print("grupo A")    
+        else:
+            print("grupo B")
 
 #Ejercicio 6
 #Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:
@@ -98,5 +105,5 @@ class Ejercicio8():
         print("la división de ",num1," entre ", num2 ,"da un cociente ",int(num1//num2) ," y un resto", int(num1%num2))
 
 
-Ej=Ejercicio8()
+Ej=Ejercicio5()
 Ej.EjecutarEjercicio()
