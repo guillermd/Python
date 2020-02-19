@@ -1,0 +1,9 @@
+comienzo del text2archivo 
+Esta linea incluida desde el exterior 
+ Tercera linea del ficherocomienzo del textocomienzo del text2archivo 
+Esta linea incluida desde el exterior 
+ Tercera linea del ficherocomienzo del textocomienzo del text2archivo 
+Esta linea incluida desde el exterior 
+ Tercera linea del ficherocomienzo del textocomienzo del text2archivo 
+Esta linea incluida desde el exterior 
+ Tercera linea del ficherocomienzo del texto

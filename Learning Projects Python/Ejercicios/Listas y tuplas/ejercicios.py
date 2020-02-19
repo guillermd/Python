@@ -110,7 +110,11 @@ class ejercicio9():
 #Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 22, 80, 65, 8, y muestre por pantalla 
 # el menor y el mayor de los precios.
 class ejercicio10():
-    pass
+    def HacerEjercicio(self):
+        lista=[50, 75, 46, 22, 80, 65, 8,17,987,1]
+        lista.sort()
+        print("Precio menor: ",lista[0])
+        print("Precio mayor: ",lista[len(lista)-1])
 
 #Ejercicio 11
 #Escribir un programa que almacene los vectores (1,2,3) y (-1,0,2) en dos listas y muestre por pantalla su producto escalar.
@@ -125,9 +129,29 @@ class ejercicio12():
     pass
 
 #Ejercicio 13
-#Escribir un programa que pregunte por una muestra de números, separados por comas, los guarde en una lista y muestre por pantalla su media y desviación típica.
+#Escribir un programa que pregunte por una muestra de números, separados por comas, 
+# los guarde en una lista y muestre por pantalla su media y desviación típica.
 class ejercicio13():
-    pass
+    def HacerEjercicio(self):
+        lista=[]
+        dato=0
+        while (dato!=99):
+            dato=int(input(print("mete un numero: ")))
+            if(dato!=99):
+                lista.append(dato)
+           
+        #desviacion=CalculaDesviacion(lista)
+        print("la media es: ", self.CalculaMedia(lista), " y la desviacion tipica: ", self.CalculaDesviacion(lista))
+    
+    def CalculaMedia(self, lista):
+        suma=0        
+        for i in lista:
+            suma+=int(i)
+        return suma/len(lista)        
+    def CalculaDesviacion(self, lista):
+        media=self.CalculaMedia(lista)
+        pass
 
-ej = ejercicio7()
+     
+ej = ejercicio13()
 ej.HacerEjercicio()
