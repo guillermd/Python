@@ -26,11 +26,21 @@ def suma(num1, num2):
 @funcion_decoradora #llamada al decorador
 def resta():
     print(30-10)
+    """comentario para documentacion de
+    la funcion
+    """
+    
 
 @funcion_decoradora_ClaveValor
 def potencia(base, exponente):
+    """Calculo de potencias"""
     print(pow(base, exponente))
 
-suma(7,3)
-resta()
-potencia(base=5, exponente=3)
+#suma(7,3)
+#resta()
+#potencia(base=5, exponente=3)
+#Ver ayudas de la funcion solicitada
+
+print(resta.__doc__)
+help(potencia)
+#en caso de q la funcion este en una clase => help(clase.funcion)
